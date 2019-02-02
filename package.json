@@ -1,0 +1,25 @@
+{
+  "name": "virtual-food-drive-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaceboycoop/virtual-food-drive-slider.git"
+  },
+  "keywords": [
+    "virtual",
+    "food",
+    "drive",
+    "slider"
+  ],
+  "author": "Cooper Brislain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spaceboycoop/virtual-food-drive-slider/issues"
+  },
+  "homepage": "https://github.com/spaceboycoop/virtual-food-drive-slider#readme"
+}
