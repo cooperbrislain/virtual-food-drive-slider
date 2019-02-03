@@ -11,7 +11,7 @@ $(document).ready(function() {
 
         $('.itemcontainer').html('');
         for(var i=0;i<quantity_at_foodbank_price;i++) {
-            $('.itemcontainer').append('<span class="overlap'  + (i>quantity_at_regular_price? ' bonus': '') + '"><image src="/img/' + (i>quantity_at_regular_price? 'bonus-': '') + 'grocery-bag.png"></span>');
+            $('.itemcontainer').append('<span class="overlap'  + (i>quantity_at_regular_price? ' bonus': '') + '"><image src="img/' + (i>quantity_at_regular_price? 'bonus-': '') + 'grocery-bag.png"></span>');
         }
         $('.donationcontainer').html('An $' + donation + ' donation buys ' + quantity_at_foodbank_price + ' days of groceries');
         $('<div class="smaller">').text('(' + quantity_at_regular_price + ' days at regular price)').appendTo('.donationcontainer');
