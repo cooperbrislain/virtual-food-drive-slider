@@ -52,6 +52,7 @@ html {
 
 .itemcontainer {
     font-size: 80px;
+    min-height: 200px;
 }
 
 span.overlap {
@@ -59,15 +60,13 @@ span.overlap {
     width: 25px;
     position: relative;
     left: -8px;
+    img {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 span.bonus {
     text-shadow: 0 0 25px #00FF00;
 
-}
-
-span.bonus.partial {
-    overflow: hidden;
-    width: 80px;
-    top: 30px;
 }
