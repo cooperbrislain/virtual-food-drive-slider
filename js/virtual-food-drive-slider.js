@@ -15,7 +15,7 @@ $(document).ready(function() {
             var unit_name = 'weeks of food';
         } else {
             var quantity_at_foodbank_price = Math.round(donation/meal_foodbank_price*multiplier);
-            var quantity_at_regular_price = Math.round(donation/regular_price);
+            var quantity_at_regular_price = Math.round(donation/meal_regular_price);
             var icon = 'meal-icon';
             var unit_name = 'meals';
         }
