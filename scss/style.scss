@@ -2,6 +2,7 @@ html {
     body {
         font-family: Montserrat;
         font-weight: 800;
+        background-color: #3C7F40;
     }
 }
 
@@ -9,7 +10,13 @@ h1 {
     text-align: center;
 }
 
+.container {
+    background-color: #FFFFFF;
+}
+
 .slidecontainer {
+    position: relative;
+    z-index: 1000;
     width: 100%;
 }
 
@@ -23,7 +30,6 @@ h1 {
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-    margin: 20px;
     &:hover {
         opacity: 1;
     }
@@ -48,21 +54,33 @@ h1 {
     }
 }
 
-.panel-body {
-    text-align: center;
-    font-weight: bold;
-    input {
-        border: 0;
-        text-align: center;
+.panel {
+    background-color: #FFF;
+    .panel-heading {
         font-weight: bold;
-        font-size: 24px;
     }
+    .panel-body {
+        text-align: center;
+        input {
+            border: 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+}
+
+.nospace {
+    width: 1px;
+    height: 1px;
+    overflow: visible;
 }
 
 .itemcontainer {
     font-size: 80px;
-    height: 320px;
-    padding-left: 50px;
+    height: 333px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-top: 25px;
     overflow: visible;
     span {
@@ -99,7 +117,7 @@ h1 {
     text-align: center;
     position: relative;
     top: -300px;
-    left: 25px;
+    left: 125px;
     span[data-donation-amount] {
         clear: both;
         color: #EEEEEE;
@@ -118,8 +136,11 @@ h1 {
 }
 
 dl.key {
+    left: 35px;
     position: relative;
-    top: -250px;
+    top: -90;
+    background: rgba(235, 235, 235, 0.8);
+    width: 333;
     dt {
         float: left;
         img {

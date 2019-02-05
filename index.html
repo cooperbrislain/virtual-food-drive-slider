@@ -9,30 +9,40 @@
 </head>
 <body>
     <div class="container-fluid">
-        <h1>
-            Virtual Food Drive
-        </h1>
+
         <div class="row justify-content-md-center">
             <div class="panel panel-default col-md-4">
+                <div class="panel-heading">
+                    <h1>
+                        Virtual Food Drive
+                    </h1>
+                </div>
                 <div class="slider-panel panel-body">
                     <div class="row">
                         <div class="itemcontainer col-md-12">
                         </div>
                     </div>
-                    <div class="quantitycontainer">
+                    <div class="row">
+                        <div class="quantitycontainer col-md-12"></div>
                     </div>
-                    <div class="slidecontainer">
-                        <input type="range" min="0" max="500" value="5" class="slider" id="myRange">
+                    <div class="row">
+                        <div class="slidecontainer col-md-12">
+                            <input type="range" min="0" max="500" value="5" class="slider" id="myRange">
+                        </div>
                     </div>
-                    <div class="donationcontainer">
-                        A donation<br/> of <span data-donation-amount></span> buys <span data-units-at-foodbank-price></span> <span data-unit-term></span>
+                    <div class="nospace">
+                        <div class="donationcontainer">
+                            A donation<br/> of <span data-donation-amount></span> buys <span data-units-at-foodbank-price></span> <span data-unit-term></span>
+                        </div>
                     </div>
-                    <dl class="key">
-                        <dt><img src="img/grocery-bag-icon.png"></dt>
-                        <dd>1 week of groceries at foodbank price.</dd>
-                        <dt><img src="img/grocery-bag-icon-green.png"></dt>
-                        <dd>1 week of groceries at regular price.</dd>
-                    </dl>
+                    <div class="nospace">
+                        <dl class="key">
+                            <dt><img src="img/grocery-bag-icon.png"></dt>
+                            <dd>1 week of groceries at foodbank price.</dd>
+                            <dt><img src="img/grocery-bag-icon-green.png"></dt>
+                            <dd>1 week of groceries at regular price.</dd>
+                        </dl>
+                    </div>
                 </div>
             </div>
         </div>
