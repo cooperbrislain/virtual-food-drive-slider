@@ -1,34 +1,41 @@
+html body {
+  font-family: Montserrat;
+  font-weight: 800; }
+
+h1 {
+  text-align: center; }
+
 .slidecontainer {
   width: 100%; }
 
 .slider {
   -webkit-appearance: none;
-  appearance: none;
   width: 100%;
-  height: 25px;
+  height: 15px;
   background: #d3d3d3;
-  outline: none;
+  border-radius: 25px;
+  outline: #333333;
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
   margin: 20px; }
-
-.slider:hover {
-  opacity: 1; }
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #4CAF50;
-  cursor: pointer; }
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  background: #4CAF50;
-  cursor: pointer; }
+  .slider:hover {
+    opacity: 1; }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    border: #0C6F10;
+    background: #4CAF50;
+    border: 3px;
+    cursor: pointer; }
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer; }
 
 .panel-body {
   text-align: center;
@@ -41,7 +48,7 @@
 
 .itemcontainer {
   font-size: 80px;
-  height: 300px;
+  height: 320px;
   padding-left: 50px;
   margin-top: 25px;
   overflow: visible; }
@@ -58,5 +65,43 @@
       vertical-align: bottom; }
     .itemcontainer span img {
       position: relative; }
+
+.donationcontainer {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(30, 175, 0, 0.9);
+  padding: 10px;
+  line-height: 18px;
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+  top: -300px;
+  left: 25px; }
+  .donationcontainer span[data-donation-amount] {
+    clear: both;
+    color: #EEEEEE; }
+    .donationcontainer span[data-donation-amount]::before {
+      content: "$"; }
+  .donationcontainer span[data-units-at-foodbank-price] {
+    font-size: 32px;
+    padding: 10px;
+    color: #EECC00;
+    display: block; }
+
+dl.key {
+  position: relative;
+  top: -250px; }
+  dl.key dt {
+    float: left; }
+    dl.key dt img {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px; }
+  dl.key dd {
+    font-size: 14px;
+    font-weight: 200;
+    text-align: left; }
 
 /*# sourceMappingURL=style.css.map */

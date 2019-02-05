@@ -1,6 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,9 +10,9 @@
 <body>
     <div class="container-fluid">
         <h1>
-            Express Virtual Food Drive
+            Virtual Food Drive
         </h1>
-        <div class="row">
+        <div class="row justify-content-md-center">
             <div class="panel panel-default col-md-4">
                 <div class="slider-panel panel-body">
                     <div class="row">
@@ -24,7 +25,14 @@
                         <input type="range" min="0" max="500" value="5" class="slider" id="myRange">
                     </div>
                     <div class="donationcontainer">
+                        A donation<br/> of <span data-donation-amount></span> buys <span data-units-at-foodbank-price></span> <span data-unit-term></span>
                     </div>
+                    <dl class="key">
+                        <dt><img src="img/grocery-bag-icon.png"></dt>
+                        <dd>1 week of groceries at foodbank price.</dd>
+                        <dt><img src="img/grocery-bag-icon-green.png"></dt>
+                        <dd>1 week of groceries at regular price.</dd>
+                    </dl>
                 </div>
             </div>
         </div>
