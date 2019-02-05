@@ -4,10 +4,14 @@ html body {
   background-color: #3C7F40; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  font-weight: 200;
+  font-size: 32px;
+  margin-top: 15px; }
 
-.container {
-  background-color: #FFFFFF; }
+.container,
+.container-fluid {
+  padding: 50px; }
 
 .slidecontainer {
   position: relative;
@@ -61,7 +65,7 @@ h1 {
 
 .itemcontainer {
   font-size: 80px;
-  height: 333px;
+  height: 350px;
   padding-left: 25px;
   padding-right: 25px;
   margin-top: 25px;

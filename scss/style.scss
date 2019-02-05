@@ -8,10 +8,14 @@ html {
 
 h1 {
     text-align: center;
+    font-weight: 200;
+    font-size: 32px;
+    margin-top: 15px;
 }
 
-.container {
-    background-color: #FFFFFF;
+.container,
+.container-fluid{
+    padding: 50px;
 }
 
 .slidecontainer {
@@ -78,7 +82,7 @@ h1 {
 
 .itemcontainer {
     font-size: 80px;
-    height: 333px;
+    height: 350px;
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 25px;
