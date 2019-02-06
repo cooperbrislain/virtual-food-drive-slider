@@ -7,8 +7,14 @@ var foodbank_price = 7.00;
 
 $(document).ready(function() {
     $('.slider').on('input load',function() {
-        var donation = $(this).val();
-        if (donation/foodbank_price*multiplier > 1) {
+        var donation = Math.round(Math.pow($(this).val()/100.0,2)*500.0);
+        if (donation/foodbank_price*multiplier > 4*6) {
+            var quantity_at_foodbank_price = Math.round(donation/foodbank_price*multiplier/4);
+            var quantity_at_regular_price = Math.round(donation/regular_price/4);
+            var icon = 'shopping-cart-icon';
+            var unit_name = 'months of food';
+        }
+        else if (donation/foodbank_price*multiplier > 1) {
             var quantity_at_foodbank_price = Math.round(donation/foodbank_price*multiplier);
             var quantity_at_regular_price = Math.round(donation/regular_price);
             var icon = 'grocery-bag-icon';
@@ -35,4 +41,6 @@ $(document).ready(function() {
         $('span[data-units-at-regular-price]').text(quantity_at_regular_price);
         $('span[data-units-difference]').text(quantity_at_foodbank_price-quantity_at_regular_price);
     });
+
+    $('.slider').triggerHandler('load');
 });
