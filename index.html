@@ -1,7 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,8 +11,9 @@
     <div class="container-fluid">
 
         <div class="row justify-content-md-center">
-            <div class="panel panel-default col-md-4">
+            <div class="panel panel-default col-md-8 col-sm-10 col-lg-4">
                 <div class="panel-heading">
+                    <img src="img/fbnn-logo.png">
                     <h1>
                         Virtual Food Drive
                     </h1>
@@ -27,33 +28,38 @@
                     </div>
                     <div class="row">
                         <div class="slidecontainer col-md-12">
-                            <input type="range" min="0" max="500" value="5" class="slider" id="myRange">
+                            <input type="range" min="1" max="500" value="5" class="slider" id="myRange">
                         </div>
                     </div>
-                    <div class="nospace">
+                    <div class="nospace" style="width: 100%">
                         <div class="donationcontainer">
                             A donation<br/> of <span data-donation-amount></span> buys <span data-units-at-foodbank-price></span> <span data-unit-term></span>
                         </div>
                     </div>
                     <div class="nospace">
                         <dl class="key">
-                            <dt><img src="img/grocery-bag-icon.png"></dt>
-                            <dd>1 week of groceries at foodbank price.</dd>
                             <dt><img src="img/grocery-bag-icon-green.png"></dt>
+                            <dd>1 week of groceries at foodbank price.</dd>
+                            <dt><img src="img/grocery-bag-icon.png"></dt>
                             <dd>1 week of groceries at regular price.</dd>
                         </dl>
+                    </div>
+                    <div class="row">
+                        <div class="donatebuttoncontainer col-md-12">
+                            <button class="btn btn-primary btn-large">Donate <span data-donation-amount></span> Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/virtual-food-drive-slider.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/virtual-food-drive-slider.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

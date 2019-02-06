@@ -29,10 +29,10 @@ $(document).ready(function() {
                     '<img src="img/' + icon + (i>quantity_at_regular_price? '-green': '') + '.png" style="width: ' + img_size + 'px; height: '+ img_size + 'px; left: -' + offset + 'px;">' +
                 '</span>');
         }
-        $('.donationcontainer span[data-donation-amount]').text(donation);
-        $('.donationcontainer span[data-units-at-foodbank-price]').text(quantity_at_foodbank_price);
-        $('.donationcontainer span[data-unit-term]').text(unit_name);
-        $('.donationcontainer span[data-units-at-regular-price]').text(quantity_at_regular_price);
-        $('.donationcontainer span[data-units-difference]').text(quantity_at_foodbank_price-quantity_at_regular_price);
+        $('span[data-donation-amount]').text(donation);
+        $('span[data-units-at-foodbank-price]').text(quantity_at_foodbank_price);
+        $('span[data-unit-term]').text(unit_name);
+        $('span[data-units-at-regular-price]').text(quantity_at_regular_price);
+        $('span[data-units-difference]').text(quantity_at_foodbank_price-quantity_at_regular_price);
     });
 });
